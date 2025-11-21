@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vocabulary Example</title>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'PT Sans', sans-serif;
+    }
+  
+.vocab-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+     gap: 20px 10px; 
+     padding: 20px;
+     max-width: 960px; 
+     margin: 0 auto; 
+    }
+  
+    .vocab-item {
+      text-align: center;
+      width: calc(25% - 20px);
+      width: 130px;
+    }
+  
+    .vocab-item img {
+      width: 100%;
+      width: 130px;
+      height: 130px;
+      object-fit: contain; 
+      cursor: pointer;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: white;
+    }
+  
+    .vocab-item span {
+      font-weight: bold;
+      font-size: 18px;
+      display: block;
+      margin-top: 10px;
+    }
+    
+  //* 1. 平板電腦
+    @media (max-width: 768px) {
+       .vocab-item {
+           width: calc(33.33% - 20px);
+       }
+    }
+
+    //* 2. 手機 (Mobile)
+    @media (max-width: 480px) {
+       .vocab-container {
+           gap: 15px 5px;
+           padding: 10px;
+       }
+       .vocab-item {
+           width: calc(50% - 15px);
+           min-width: 100px;
+       }
+       .vocab-item img {
+           height: 100px; 
+       }
+       .vocab-item span {
+           font-size: 16px; 
+       }
+    }
+    
+    //* 3. 超小手機
+    @media (max-width: 320px) {
+       .vocab-item {
+           width: 90%;
+       }
+       .vocab-container {
+           justify-content: center; 
+       }
+    }  </style>
+
+</head>
+<body>
+
+  <h1 style="text-align: center; font-size: 20px; font-weight: bold; margin-top: 16px;">
+      打開聲音，聽聽這些安全裝備的英文怎麼說！
+  </h1>
+  
+  <div class="vocab-container">
+
+    <div class="vocab-item">
+      <img src="cotton_gloves.png" alt="Cotton Gloves"
+           onclick="document.getElementById('cotton_glovesSound').play()">
+      <span>Cotton Gloves</span>
+      <audio id="cotton_glovesSound" src="cotton_gloves.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="latex_gloves_rubber_gloves.png" alt="Latex Gloves (Rubber Gloves)"
+           onclick="document.getElementById('latex_gloves_rubber_glovesSound').play()">
+      <span>Latex Gloves (Rubber Gloves)</span>
+      <audio id="latex_gloves_rubber_glovesSound" src="latex_gloves_rubber_gloves.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="earplugs.png" alt="Earplugs"
+           onclick="document.getElementById('earplugsSound').play()">
+      <span>Earplugs</span>
+      <audio id="earplugsSound" src="earplugs.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="earmuffs_ear_defenders.png" alt="Earmuffs (Ear Defenders)"
+           onclick="document.getElementById('earmuffs_ear_defendersSound').play()">
+      <span>Earmuffs (Ear Defenders)</span>
+      <audio id="earmuffs_ear_defendersSound" src="earmuffs_ear_defenders.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="safety_goggles.png" alt="Safety Goggles"
+           onclick="document.getElementById('safety_gogglesSound').play()">
+      <span>Safety Goggles</span>
+      <audio id="safety_gogglesSound" src="safety_goggles.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="safety_glasses.png" alt="Safety Glasses"
+           onclick="document.getElementById('safety_glassesSound').play()">
+      <span>Safety Glasses</span>
+      <audio id="safety_glassesSound" src="safety_glasses.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="safety_helmet.png" alt="Safety Helmet"
+           onclick="document.getElementById('safety_helmetSound').play()">
+      <span>Safety Helmet</span>
+      <audio id="safety_helmetSound" src="safety_helmet.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="surgical_mask_face_mask.png" alt="Surgical Mask (Face Mask)"
+           onclick="document.getElementById('surgical_mask_face_maskSound').play()">
+      <span>Surgical Mask (Face Mask)</span>
+      <audio id="surgical_mask_face_maskSound" src="surgical_mask_face_mask.mp3"></audio>
+    </div>
+    
+    <div class="vocab-item">
+      <img src="face_shield.png" alt="Face Shield"
+           onclick="document.getElementById('face_shieldSound').play()">
+      <span>Face Shield</span>
+      <audio id="face_shieldSound" src="face_shield.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="half_mask_half_mask_respirator.png" alt="Half-mask (Half-mask Respirator)"
+           onclick="document.getElementById('half_mask_half_mask_respiratorSound').play()">
+      <span>Half-mask (Half-mask Respirator)</span>
+      <audio id="half_mask_half_mask_respiratorSound" src="half_mask_half_mask_respirator.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="particulate_filter_dust_filter.png" alt="Particulate Filter (Dust Filter)"
+           onclick="document.getElementById('particulate_filter_dust_filterSound').play()">
+      <span>Particulate Filter (Dust Filter)</span>
+      <audio id="particulate_filter_dust_filterSound" src="particulate_filter_dust_filter.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="vapor_cartridge.png" alt="Vapor Cartridge"
+           onclick="document.getElementById('vapor_cartridgeSound').play()">
+      <span>Vapor Cartridge</span>
+      <audio id="vapor_cartridgeSound" src="vapor_cartridge.mp3"></audio>
+    </div>
+    
+    <div class="vocab-item">
+      <img src="safety_harness.png" alt="Safety Harness"
+           onclick="document.getElementById('safety_harnessSound').play()">
+      <span>Safety Harness</span>
+      <audio id="safety_harnessSound" src="safety_harness.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="safety_lanyard.png" alt="Safety Lanyard"
+           onclick="document.getElementById('safety_lanyardSound').play()">
+      <span>Safety Lanyard</span>
+      <audio id="safety_lanyardSound" src="safety_lanyard.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="safety_vest_reflective_vest.png" alt="Safety Vest (Reflective Vest)"
+           onclick="document.getElementById('safety_vest_reflective_vestSound').play()">
+      <span>Safety Vest (Reflective Vest)</span>
+      <audio id="safety_vest_reflective_vestSound" src="safety_vest_reflective_vest.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="safety_shoes_steel_toe_boots.png" alt="Safety Shoes (Steel-toe Boots)"
+           onclick="document.getElementById('safety_shoes_steel_toe_bootsSound').play()">
+      <span>Safety Shoes (Steel-toe Boots)</span>
+      <audio id="safety_shoes_steel_toe_bootsSound" src="safety_shoes_steel_toe_boots.mp3"></audio>
+    </div>
+
+    <div class="vocab-item">
+      <img src="workwear.png" alt="Workwear"
+           onclick="document.getElementById('workwearSound').play()">
+      <span>Workwear</span>
+      <audio id="workwearSound" src="workwear.mp3"></audio>
+    </div>
+
+    
+
+  </div>
+
+</body>
+</html>
